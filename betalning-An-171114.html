@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+ 
+    <!--Media icon library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>betalning_registering</title>
+    <link rel="stylesheet" href="betalning-An-171114.css" type="text/css"/>
+</head>
+<body>
+    <h2 id="logo"><strong>Happy Baby</strong></h2>
+    <!--Header part-->
+       <!--Collpase Navbar-->
+        <nav class="nav navbar justify-content-around">
+           <div class="container-fluid">
+               <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+               </button>
+               
+               <div class="navbar-text text-center visible-xs">Ett bättre val till barn</div>
+           </div>
+           <!--Navbars-->
+           <div class="collapse navbar-collapse" id="myNavbar">
+               <ul class="nav navbar-nav">
+                   <li class="active"><a href="#">Vem är vi</a></li>
+                   <li><a href="#">Produkter</a></li>
+                   <li><a href="#">Min beställning</a></li>
+                   <li class="hidden-sm"><a href="#">Kontakta oss</a></li>
+                </ul>
+                <form class="navbar-form navbar-left hidden-sm hidden-md ">
+                       <div class="input-group">
+                           <input class="form-control" type="text" placeholder="Search">
+                           <div class="input-group-btn">
+                               <button class="btn btn-info" type="submit">
+                                   <i class="glyphicon glyphicon-search"></i>
+                               </button>
+                           </div>
+                       </div>
+                   </form>
+
+                <ul class="nav navbar-nav navbar-right ">
+                       <li class="hidden-sm "><a href="#"><span class="glyphicon glyphicon-user"></span> User</a></li>
+                       <li class=" "><a href="#"><spsn class="glyphicon glyphicon-log-in"></spsn> log in</a></li>
+               </ul>
+               <form class="navbar-form navbar-right  ">
+                       <div class="form-inline">
+                               <label for="language"></label>
+                               <select class="form-control" id="language">
+                                   <option>Svenska</option>
+                                   <option>Englisk</option>
+                                   <option>中文</option>
+                               </select>
+                       </div>
+               </form>
+           </div>  
+        </nav>
+        <!--breadcrumb and language-->
+        <div class="container-fluid">
+                <ul class="breadcrumb">
+                   <li><a href="hemsida-An-171114.html">Hem</a></li>
+                   <li><a href="#">Min varokorg</a></li>
+                   <li><a href="#" class="active">kassa</a></li>
+               </ul>
+        </div>
+        <!--kontack uppgifter och beställing--> 
+        <div class="container-fluid">
+          <div class="row">
+            <!--Uppgifter-->
+            <div class="col-sm-8 col-xs-12">
+                <div class="panel">
+                    <div class="panel-body">
+                        <h2>Kontaktuppgifter</h2>
+                            <div class="form-group socialno-container clearfix">
+                                <label for="personnummer">Personnummer för bekräftelse <span>*</span> <em>t.ex ÅÅÅÅMMDDXXXX</em></label>
+                                <input type="text" class="form-control social-number v2 pull-left required" id="personnummer" value="" name="personnummer" placeholder="Personnummer" required>
+                                <button type="button" class="btn btn-primary address_check pull-left">Hämta adress</button>
+                                <span class="glyphicon glyphicon-asterisk form-control-feedback"></span>    
+                            </div>
+                            <div class="form-group">
+                                <label for="firstname">Förnamn <span>*</span> <em>t.ex. Förnamn</em></label>
+                                <input type="text" class="form-control required" id="firstname" name="firstname" placeholder="Förnamn" value="" required>
+                                <span class="glyphicon glyphicon-asterisk form-control-feedback"></span>  
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname">Efternamn <span>*</span> <em>t.ex. Efternamn</em></label>
+                                <input type="text" class="form-control required" id="lastname" name="lastname" placeholder="Efternamn" value="" required>
+                                <span class="glyphicon glyphicon-asterisk form-control-feedback"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-postadress <span>*</span> <em>t.ex. hej@hotmail.com</em></label>
+                                <input type="email"
+                                           id="email"
+                                           class="form-control required"
+                                           name="email"
+                                           value=""
+                                           required 
+                                           placeholder="E-postadress">
+                                <span class="glyphicon glyphicon-asterisk form-control-feedback"></span>
+                            </div>
+                            <div class="form-group">
+                                    <label for="email">Bekräfta E-postadress <span>*</span> </label>
+                                    <input type="email"
+                                           id="email"
+                                           class="form-control required"
+                                           name="email"
+                                           value=""
+                                           required 
+                                           placeholder="E-postadress">
+                                    <span class="glyphicon glyphicon-asterisk form-control-feedback"></span>
+                            </div>   
+                    </div>
+                </div>
+                
+                    <div class="panel">
+                        <div class="panel-body">
+                          <h2>Leverans</h2>
+                            <p>Var vill du att vi ska leverera din beställning?</p>
+                            
+                                <div class="form-group">
+                                    <label for="address">Adress <span>*</span> 
+                                    <input type="text" class="form-control required" name="address" id="address" placeholder="Adress" value="" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="coaddress">C/O </label>
+                                    <input type="text" class="form-control" name="address2" id="address2" placeholder="C/O" value="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="zip">Postnummer</label>  
+                                    <input type="text" class="form-control required" name="zip" id="zip" placeholder="Postnumber" value="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="city">Ort</label>
+                                    <span id="city_span" class="form-control">Ort</span>
+                                    <input type="hidden" value="" class="form-control required" name="city" id="city" placeholder="Stad">
+                                </div>
+                                <div class="form-group">
+                                    <p class="medium">Godkänn villkor</p>
+                                    <label>
+                                        <input type="checkbox" name="conditions" id="conditions" value="yes" required>
+                                        Jag har läst och godkänner <a href="#conditionsModal"  data-toggle="modal">köpvillkoren</a> <span>*</span>
+                                    </label>
+                                    <br>
+                                </div>
+                         
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-body">
+                            <h2>Betalning</h2>
+                                
+                                    <label for="paymentOption" class="error" >Välj ett betalningsalternativ</label><span class="required">*</span>
+                                    <div class="form-group ">
+                                        <div id="card-payment" class="radio">
+                                            <form>
+                                                <label class="radio-inline">
+                                                <input type="radio" name="paymentOption" id="card" value="card"   required aria-required="true">
+                                                <img class="cards" 
+                                                     src="visa.png" 
+                                                     width="50" 
+                                                     height="50" 
+                                                     alt=""/>
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="paymentOption" id="card" value="card"   required aria-required="true">
+                                                    <img class="cards" 
+                                                        src="mastercard.png" 
+                                                        width="50" 
+                                                         height="50" 
+                                                        alt=""/>
+                                                </label>
+                                                <label class="radio-inline">
+                                                        <input type="radio" name="paymentOption" id="invoice" value="invoice">
+                                                        <p>Betala med faktura</p>
+                                                </label>
+                                                <p>Fakturan skickas till din e-postadress onsdagen efter leverans. Vi erbjuder även e-faktura. Ingen fakturaavgift tillkommer.</p>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <button id="skickaorder" type="submit" class="btn btn-lg btn-interest">Skicka beställningen</button> 
+                                
+                        </div>
+                    </div>
+            </div>
+
+            <!--aside beställning-->
+           
+            <div class="col-sm-4 col-xs-12">
+                <h2>Din beställning</h2>
+                <br>
+                <div id="yourOrderIsPink">
+                    <!--the first product-->
+                    <div class=" row">
+                        <div class="col-xs-4">
+                            <a href="produkt-An-171114.html"><img src="semper-babysemp4-800g.jpg" class="img-responsive"></a>
+                        </div>
+                        <div class="col-xs-8">
+                            <h4>Semper-babysemp4-8000g</h4>
+                            <p id="unitPrice1" class="productPrice">109</p>
+                            <p class="productPrice">kr</p>
+                            <br>
+                            <input id="qty1" type="number" value="1" min="0"><span>st</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <!--The second product-->
+                    <div class="row">
+                            <div class="col-xs-4">
+                                <img src="baby-semp-3-800g.jpg" class="img-responsive">
+                            </div>
+                            <div class="col-xs-8">
+                                <h4>Semper-babysemp3-8000g</h4>
+                                <br>
+                                <p id="unitPrice2" class="productPrice">89</p>
+                                <p class="productPrice">kr</p>
+                                <br>
+                                <input id="qty2" type="number" value="1" min="0"><span>st</span>
+                            </div>
+                    </div>
+                    <hr>
+
+                    <!--Check to count totalprice-->
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <button id="caculate"><strong>Vad kostar det?</strong></button> 
+                            <br> 
+                            <br> 
+                        <div class="col-xs-12 cac_result">     
+                            <p><strong>Totalt pris:</strong> <span id="totalPrice"></span><span>kr</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!--footer-->  
+        <hr> 
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-5 col-sm-4 col-md-4 text-center">
+                        <div>&copy;HappyBaby<br> AB</div>
+                    </div>
+                    <div class="hidden-xs col-sm-4 col-md-4 text-center">
+                        <div>Address:<br>xxxx-xxx-xxx</div>
+                    </div>
+                    <div class="col-xs-7 col-sm-4 col-md-4 text-center">
+                        <div class="row">
+                            <p class="col-xs-2 col-sm-4 col-md-6">Följ：</p>
+                            <div class="col-xs-10 col-sm-8 col-md-6">
+                                    <a href="#" class="fa fa-facebook"></a> 
+                                    <a href="#" class="fa fa-twitter"></a>
+                                    <a href="#" class="fa fa-google"></a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <script type="text/javascript" src="betalning.js"></script>
+</body>
+</html>
+
+<!--
+<p>Inga kostnader tillkommer.</p>
+                
+                    <div class="row">
+                            <h2>Kontakt</h2>
+                                <p>Har du frågor om din beställning?</p>
+                                <p>Ring kundtjänst på 0200-456 888 så hjälper vi dig.</p>  
+                        </div> 
+
+
+
+-->

@@ -1,0 +1,178 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+header {
+  padding: 20px 0;
+}
+
+header h2 {
+  font-weight: 700;
+  margin: 0;
+  color:rgb(209, 47, 47);
+}
+
+header form {
+  margin:10px;
+  position: relative;
+  width: 80%;
+}
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  font-weight: 700;
+  margin: 0;
+  color:rgb(209, 47, 47);
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+ 
+}
+
+header p {
+  padding: 0 10px;
+  margin: 0;
+}
+
+header button{ 
+  background-color:rgb(228, 166, 166);
+}
+
+#linktoProdukt {
+  color:black;
+}
+
+#linktoProdukt:hover {
+  color:rgb(228, 166, 166);
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  background-image:url(Happy-baby-in-bed-with-Mummy.jpg);
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  
+  height: 550px;
+  color:rgb(209, 47, 47);
+}
+#slag{
+  font-size:50px;
+}
+
+.jumbotron h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  color: rgb(209, 47, 47);
+  
+}
+
+.jumbotron h3 {
+  margin: 0 0 20px;
+  color: rgb(209, 47, 47);
+}
+
+section .row img {
+  margin: 0 0 30px;
+  width: 100%;
+}
+
+.col-md-4 {
+  margin: 0 0 30px;
+}
+
+.btn.btn-primary {
+  border-radius: 2px;
+  border: 0px;
+  color: #fbd1d5;
+  text-shadow: none;
+  background-color: #ffffff;
+}
+
+.btn.btn-primary:hover {
+  color: #ffffff;
+  background-color: #fbd1d5;
+}
+
+.btn-secondary {
+  background-color: #E8DFE0;
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+
+
+footer li img {
+  width: 32px;
+  height: 32px;
+}
+
+.fa {
+  padding: 5px;
+  font-size: 18px;
+  width: 26px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 1px;
+  display: inline-block;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+
+.fa-google {
+background: #dd4b39;
+color: white;
+}
+
+
+.nav {
+background-color: pink;
+color:white;
+}
+.icon-bar {
+  background-color:lightyellow;
+}
+footer{
+  padding:10px;
+  background:lightpink;
+  height:60px;
+}
+/* Ajust the texts in the jumbotron*/
+.intro{
+  position:relative;
+  top:180px;
+}
+
+#logo{
+  margin-left:15px;
+  color:rgb(221, 61, 61);
+  font-family: fantasy;
+  
+}
